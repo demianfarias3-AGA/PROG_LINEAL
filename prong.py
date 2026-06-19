@@ -34,8 +34,10 @@ st.sidebar.subheader("Ruta B (Secundaria)")
 cap_B = st.sidebar.number_input("Capacidad Máxima B (Mbps)", min_value=0.0, value=60.0,step=0.5)
 costo_B = st.sidebar.number_input("Costo B (por Mbps)", min_value=0.0, value=5.0,step=0.05)
 
+# --- Lógica del Algoritmo Colapsado --
+
 if st.button("ejecutar optimizacion"):
-# --- Lógica del Algoritmo Colapsado ---
+
     if demanda_total <= cap_A:
        flujo_A = demanda_total
        flujo_B = 0.0
