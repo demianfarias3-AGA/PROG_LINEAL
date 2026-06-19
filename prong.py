@@ -42,8 +42,8 @@ if st.button("ejecutar optimizacion"):
        flujo_A = demanda_total
        flujo_B = 0.0
  else:
-    flujo_A = cap_A
-    flujo_B = demanda_total - flujo_A
+      flujo_A = cap_A
+      flujo_B = demanda_total - flujo_A
     
     # Validación si el remanente supera la capacidad física de la Ruta B
     if flujo_B > cap_B:
