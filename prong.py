@@ -44,15 +44,16 @@ else:
     
     # Validación si el remanente supera la capacidad física de la Ruta B
     if flujo_B > cap_B:
-        flujo_B = cap_B
+        flujo_B = cap_Bg
 
 costo_total = (flujo_A * costo_A) + (flujo_B * costo_B)
 capacidad_total_red = cap_A + cap_B
-
+with col4:
+    milanesa
 # --- Métricas Principales ---
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.metric(label="Flujo Ruta A", value=f"{flujo_A:f} Mbps")
+    st.metric(label="Flujo Ruta A", value=f"{flujo_A:.2f} Mbps")
 with col2:
     st.metric(label="Flujo Ruta B", value=f"{flujo_B:.2f} Mbps")
 with col3:
