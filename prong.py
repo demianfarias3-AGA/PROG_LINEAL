@@ -11,7 +11,7 @@ st.set_page_config(
 # --- Título y descripción ---
 st.title("🌐 Optimización de Redes (Modo Colapsado)")
 st.markdown("""
- Esta aplicacion es para gigachads
+
 Satura la ruta más económica (Ruta A) antes de asignar el remanente a la ruta secundaria (Ruta B).
 """)
 
@@ -23,7 +23,7 @@ demanda_total = st.sidebar.slider(
     min_value=0.0, 
     max_value=200.0, 
     value=120.0, 
-    step=5.0
+    step=10.0
 )
 
 st.sidebar.subheader("Ruta A (Económica)")
