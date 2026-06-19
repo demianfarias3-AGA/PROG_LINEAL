@@ -27,7 +27,7 @@ demanda_total = st.sidebar.slider(
 )
 
 st.sidebar.subheader("Ruta A (Económica)")
-cap_A = st.sidebar.number_input("Capacidad Máxima A (Mbps)", min_value=0.0, value=10.0)
+cap_A = st.sidebar.number_input("Capacidad Máxima A (Mbps)", min_value=0.0, value=90.0,step=0.5)
 costo_A = st.sidebar.number_input("Costo A (por Mbps)", min_value=0.0, value=2.0)
 
 st.sidebar.subheader("Ruta B (Secundaria)")
@@ -48,8 +48,7 @@ else:
 
 costo_total = (flujo_A * costo_A) + (flujo_B * costo_B)
 capacidad_total_red = cap_A + cap_B
-with col4:
-    milanesa
+
 # --- Métricas Principales ---
 col1, col2, col3 = st.columns(3)
 with col1:
