@@ -83,3 +83,5 @@ st.bar_chart(datos_grafico['Tráfico Asignado (Mbps)'])
 st.subheader("📋 Resumen de Datos")
 st.dataframe(datos_grafico)
 
+st.button("ejecutar"):
+
