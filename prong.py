@@ -28,7 +28,7 @@ demanda_total = st.sidebar.slider(
 
 st.sidebar.subheader("Ruta A (Económica)")
 cap_A = st.sidebar.number_input("Capacidad Máxima A (Mbps)", min_value=0.0, value=90.0,step=0.5)
-costo_A = st.sidebar.number_input("Costo A (por Mbps)", min_value=0.0, value=2.0)
+costo_A = st.sidebar.number_input("Costo A (por Mbps)", min_value=0.0, value=2.0,step=0.05)
 
 st.sidebar.subheader("Ruta B (Secundaria)")
 cap_B = st.sidebar.number_input("Capacidad Máxima B (Mbps)", min_value=0.0, value=60.0,step=0.5)
