@@ -52,7 +52,7 @@ capacidad_total_red = cap_A + cap_B
 # --- Métricas Principales ---
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.metric(label="Flujo Ruta A", value=f"{flujo_A:.f} Mbps")
+    st.metric(label="Flujo Ruta A", value=f"{flujo_A:f} Mbps")
 with col2:
     st.metric(label="Flujo Ruta B", value=f"{flujo_B:.2f} Mbps")
 with col3:
