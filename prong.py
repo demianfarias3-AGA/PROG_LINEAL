@@ -36,10 +36,10 @@ costo_B = st.sidebar.number_input("Costo B (por Mbps)", min_value=0.0, value=5.0
 
 if st.button("ejecutar optimizacion"):
 # --- Lógica del Algoritmo Colapsado ---
-if demanda_total <= cap_A:
+    if demanda_total <= cap_A:
     flujo_A = demanda_total
     flujo_B = 0.0
-else:
+ else:
     flujo_A = cap_A
     flujo_B = demanda_total - flujo_A
     
