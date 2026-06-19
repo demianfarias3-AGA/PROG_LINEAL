@@ -11,7 +11,7 @@ st.set_page_config(
 # --- Título y descripción ---
 st.title("🌐 Optimización de Redes (Modo Colapsado)")
 st.markdown("""
-Esta aplicación resuelve el problema de enrutamiento óptimo de tráfico utilizando el modelo colapsado en tiempo constante $\mathcal{O}(1)$. 
+ Esta aplicacion es para gigachads
 Satura la ruta más económica (Ruta A) antes de asignar el remanente a la ruta secundaria (Ruta B).
 """)
 
