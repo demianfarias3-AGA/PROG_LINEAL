@@ -32,7 +32,7 @@ costo_A = st.sidebar.number_input("Costo A (por Mbps)", min_value=0.0, value=2.0
 
 st.sidebar.subheader("Ruta B (Secundaria)")
 cap_B = st.sidebar.number_input("Capacidad Máxima B (Mbps)", min_value=0.0, value=60.0,step=0.5)
-costo_B = st.sidebar.number_input("Costo B (por Mbps)", min_value=0.0, value=5.0)
+costo_B = st.sidebar.number_input("Costo B (por Mbps)", min_value=0.0, value=5.0,step=0.05)
 
 # --- Lógica del Algoritmo Colapsado ---
 if demanda_total <= cap_A:
